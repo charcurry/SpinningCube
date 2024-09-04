@@ -15,6 +15,6 @@ public class Spin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.eulerAngles += new Vector3(0, speed, 0);
+        transform.eulerAngles += new Vector3(0, speed, 0) * Time.deltaTime;
     }
 }
